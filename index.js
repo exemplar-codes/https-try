@@ -48,5 +48,5 @@ const app = express();
 app.get("/", (req, res) => res.send("Hello HTTPS!"));
 
 https.createServer(httpsOptions, app).listen(3000, () => {
-  console.log("HTTPS server running");
+  console.log("HTTPS server running on https://localhost:3000/");
 });
